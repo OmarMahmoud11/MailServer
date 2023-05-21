@@ -1,0 +1,29 @@
+<p id = "intro">Contacts</p>
+
+<form class = "form">
+    <label for = "username">Enter Username:</label>
+    <input type ="text" id = "username">
+    <label for="email">Enter E-mail:</label>
+    <input type="text" id="email"> 
+    <button type ="button" (click)="addContact()">Add Contact</button>
+</form>
+
+<table id = "contact_table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Emails</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="mybody">
+    </tbody>
+</table>
+<div class="email-popup" id = "email-popup">
+    <button type="button" id = "close" (click) = "closeEmailPopup()">Close</button>
+    <input style="margin-left: 60px;" type="text" id="emails">
+    <button type="button" id = "addNewEmail" (click) = "addNewEmail()">Add New Email</button>
+    <table class="email-table" id= "email-table">
+    </table>
+</div>
+

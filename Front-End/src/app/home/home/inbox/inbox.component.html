@@ -1,0 +1,57 @@
+<p id = "intro">Inbox</p>
+<button type = "button" id = "refresh" (click)="ngOnInit()">Refresh</button>
+<div id = "date-priority-container">
+    <label for = "date-priority">Show Emails using Priority:</label>
+    <input type="checkbox" id = "date-priority">
+</div>
+
+<div id = "bulkmove">
+    <label for = "move_options">Bulk Move Selected Emails to Specified Folder</label>
+    <select name="moveOptions" id="move_options">
+
+    </select>
+    <button type="button" id = "bulkmovebtn" (click)="bulkMove()">Move</button>
+</div>
+
+
+
+<div id = "email_table">
+    <table>
+        <thead>
+            <tr>
+                <th>Sender</th>
+                <th>Date</th>
+                <th>Subject</th>
+                <th>Priority</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id= "mybody">
+        </tbody>
+    </table>
+</div>
+
+<div class="email-popup" id = "email-popup">
+    <button type="button" id = "close" (click) = "closeEmailPopup()">Close</button>
+    <div class="email-container">
+        <div class = "sender-container" id = "sender-container">
+            <label for = "sender">Sender:</label>
+        </div>
+        <div class = "date-container" id = "date-container">
+            <label for = "date">Date: </label>
+        </div>
+        <div class = "subject-container" id = "subject-container">
+            <label for = "subject">Subject: </label>
+        </div>
+        <div class = "priority-container" id = "priority-container">
+            <label for = "priority">Priority: </label>
+        </div>
+        <div class = "message-container" id = "message-container">
+            <label for = "message">Message: </label>
+        </div>
+        <div id = "attachment-container" >
+            <label for = "attachment">Attachments:</label>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+#intro{
+    font-size: 35px;
+    font-style:oblique;
+    margin-top: 5px;
+    position:absolute;
+    left: 700px;
+}
+
+#email_table{
+    position:absolute;
+    top: 75px;
+    border-collapse: separate;
+    border-spacing: 50px;
+}
+
+th,td{
+    width: 600px;
+    text-align: center;
+    padding: 7px;
+    margin: 50px;
+}
+
+button{
+    margin-right: 5px;
+}
+
+#refresh {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: unset;
+    font-family: cursive;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgb(255, 0, 0);
+  }

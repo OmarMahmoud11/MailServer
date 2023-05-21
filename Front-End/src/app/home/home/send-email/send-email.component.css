@@ -1,0 +1,68 @@
+#intro{
+    font-size: 35px;
+    font-style:oblique;
+    margin-top: 5px;
+    position:absolute;
+    left: 700px;
+}
+
+
+
+#send_email{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position:absolute;
+  top: 70px;
+  width: 60%;
+  margin-left: 20px;
+  font-size: 17px;
+  line-height: 0.6;
+  letter-spacing: -0.007em;
+  font-weight: 500;
+  font-style: normal;
+  height:25%;
+}
+
+#send_email label{
+  margin-right:10px;
+}
+
+#Receiver_table{
+  position:absolute;
+  margin-left:800px;
+  border-collapse: separate;
+  border-spacing: 30px;
+  top:0;
+}
+
+th,td{
+  width: 200px;
+  text-align: center;
+  padding: 7px;
+  margin: 25px;
+}
+
+#Receiver_table > button:nth-child(3) {
+  /* margin-top: 1px; */
+  position: absolute;
+  left: 400px;
+  width: 75px;
+}
+
+#Message{
+  display: flex;
+  align-content: center;
+}
+
+
+
+#Message > label:nth-child(1) {
+  margin-top: 35px;
+}
+
+#Receiver > button:nth-child(3) {
+  margin-left: 5px;
+  }
+
+  

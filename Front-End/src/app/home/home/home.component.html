@@ -1,0 +1,66 @@
+<div class = "home_container">
+
+    <div class = "tool_bar">
+        <label for="filter_container">Filter:</label>
+        <div class = "filter_container">
+            <select name="filter_menu" id="filter_menu">
+                <option value="sender">Sender</option>
+                <option value="recievers">Subject</option>
+            </select>
+            <input type = "text" id = "filter_text">
+            <button type = "button" value = "Filter" (click) = "filter()">Filter</button>
+        </div>
+        <label for="sort_container">Sort:</label>
+        <div class = "sort_container">
+            <select name="sort_menu" id="sort_menu">
+                <option value="date">Date</option>
+                <option value="body">Body</option>
+                <option value="subject">Subject</option>
+                <option value="priority">Priority</option>
+                <option value="sender">Sender</option>
+                <option value="contacts">Contacts</option>
+            </select>
+            <select name="sort_order" id="sort_order">
+                <option value = "ascending">Ascending</option>
+                <option value = "descending">Descending</option>
+            </select>
+            <button type = "button" value = "Sort" (click) = "sort()">Sort</button>
+        </div>
+        <label for="search_container">Search:</label>
+        <div class = "search_container">
+            <input type = "text" id = "search_text">
+            <button type = "button" value = "Search" (click) = "search()">Search</button>
+        </div>
+        <div class = "account_container">
+            <button (click)="logOut()" type = "button" value = "LogOut">Log Out</button>
+        </div>
+    </div>
+
+    <div class = "nav_bar">
+            <div>
+                <button (click) = "switchToFolders()" type = "button" value = "Folders">My Folders</button>
+            </div>
+            <div>
+                <button (click)="switchToSendEmail()" type = "button" value = "Send Email">Send E-mail</button>
+            </div>
+            <div>
+                <button (click)="switchToContacts()" type = "button" value = "Contacts">Contacts</button>
+            </div>
+            <div>
+                <button (click)="switchToInbox()" type = "button" value = "Inbox">Inbox</button>
+            </div>
+            <div>
+                <button (click)="switchToSent()" type = "button" value = "Sent">Sent</button>
+            </div>
+            <div>
+                <button (click)="switchToDraft()" type = "button" value = "Draft">Draft</button>
+            </div>
+            <div>
+                <button (click)="switchToTrash()" type = "button" value = "Trash">Trash</button>
+            </div>
+    </div>
+
+    <div class = "body">
+        <router-outlet ></router-outlet>
+    </div>
+</div>

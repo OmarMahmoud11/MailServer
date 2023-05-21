@@ -1,0 +1,67 @@
+.tool_bar{
+    background-color: rgb(148, 148, 148);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width:1511px;
+    height: 30%;
+}
+
+.tool_bar button{
+    margin-left:5px;
+}
+
+.tool_bar div{
+    padding:10px;
+    right: 0.5em;
+}
+.tool_bar label{
+    padding:10px;
+    color: rgb(49, 8, 116);
+    font:bolder;
+    font-family: cursive;
+}
+
+.account_container button{
+    background-color: rgb(240, 27, 27);
+    border-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 400px;
+}
+
+
+.nav_bar{
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    position:absolute;
+    top:65px;
+    width:1511px;
+    height:3.4em;
+    align-items: center;
+}
+.nav_bar button{
+    height: 45px;
+    width: 100px;
+    font-family: cursive;
+    background-color: #085228;
+    border-radius: 10px;
+    color:#ffffff;
+
+}
+
+.body{
+    background-color: #3ba8a8;
+    position:absolute;
+    top: 120px;
+    left: 5px;
+    height: 2000px;
+    width: 1514px;
+}
+

@@ -1,0 +1,23 @@
+<p id = "intro">My Folders</p>
+
+<form class = "form">
+    <label for = "folder">Enter Your Folder's Name:</label>
+    <input type ="text" id = "folder">
+    <button type ="button" (click)="addFolder()">Add Folder</button>
+</form>
+
+<table id = "folder_table">
+    <thead>
+        <tr>
+            <th>Folder</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="mybody">
+    </tbody>
+</table>
+
+<div class = "body">
+    <router-outlet ></router-outlet>
+</div>
+

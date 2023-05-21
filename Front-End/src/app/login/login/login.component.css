@@ -1,0 +1,59 @@
+.login_container{
+  position: absolute;
+  display: flexbox;
+  flex-direction: column;
+  justify-content:space-between;
+  font-family: cursive;
+  width: 400px;
+  height: 400px;
+  top: 200px;
+  left: 650px;
+}
+label{
+  font-size: 22px;
+}
+input{
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  font-size:18px;
+}
+
+#user_name_container{
+  display: flex;
+  flex-flow:column;
+  color:white;
+}
+
+#password_container{
+  display: flex;
+  flex-flow:column;
+  color:white;
+
+}
+
+#buttons{
+  display: flex;
+  flex-flow:row;
+}
+
+#create{
+  width: 180px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(1, 19, 37);
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  font-family: cursive;
+}
+#login{
+  width: 90px;
+  height: 30px;
+  margin-right:36px;
+  border-radius: 10px;
+  background-color:rgb(1, 19, 37);
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  font-family: cursive;
+}
+

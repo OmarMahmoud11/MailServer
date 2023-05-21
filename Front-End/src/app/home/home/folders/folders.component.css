@@ -1,0 +1,55 @@
+#intro{
+    font-size: 35px;
+    font-style: oblique;
+    margin-top: 5px;
+    position: absolute;
+    left: 700px;
+}
+
+.form{
+    position: absolute;
+    left: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top: 85px;
+}
+
+.form button{
+    margin-left: 5px;
+}
+
+.form label{
+    font-family: cursive;
+    font-size: medium;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#folder_table{
+    position: absolute;
+    top: 150px;
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin-left: 134px;
+}
+
+#folder_table th,td{
+    width: 300px;
+    text-align: center;
+    padding: 7px;
+    margin: 50px;
+}
+
+button{
+    margin-right: 5px;
+}
+
+.body{
+    top:100px;
+    position:absolute;
+    top: 85px;
+    left: 700px;
+    height: 85%;
+    width: 800px;
+}

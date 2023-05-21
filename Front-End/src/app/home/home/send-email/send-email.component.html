@@ -1,0 +1,51 @@
+<p id = "intro">Send E-mail</p>
+
+<form id = "send_email">
+    <div id = "Priority">
+        <label for = "priority_select">Choose Your priority:</label>
+        <select id = "priority_select">
+            <option value="Urgent">Urgent</option>
+            <option value="Important">Important</option>
+            <option value="Standard">Standard</option>
+            <option value="Skippable">Skippable</option>
+        </select>
+    </div>
+    <div id = "Receiver">
+        <label for = "receiver">Receiver</label>
+        <input type="text" id = "receiver">
+        <button type="button" id = "receiver_btn" (click)="showReceiver()">Add to Receivers</button>
+        <table id = "Receiver_table">
+            <thead>
+                <tr>
+                    <th>Receivers</th>
+                </tr>
+            </thead>
+            <tbody id = "mybody">
+            </tbody>
+            <button type="button"(click) = "clear()">Clear List</button>
+        </table>
+    </div>
+
+    <div id = "Subject">
+        <label for = "subject">Subject</label>
+        <input type="text" id="subject">
+    </div>
+
+    <div id = "Attachments">
+        <label for = "attachment">Select an attachment:</label>
+        <input type="file" id="attachment" multiple (change) = "getAttachment($event.target)">
+    </div>
+
+    <div id = "Message">
+        <label for = "message">Enter Your Message:</label>
+        <textarea id = "message" rows = "10" cols = "75"></textarea>
+    </div>
+    <div>
+        <button type="button" (click)="sendEmail()" >Send E-mail</button>
+    </div>
+    <div>
+      <button type="button" (click)="movetoDraft()" >Move to Draft</button>
+    </div>
+
+
+</form>
